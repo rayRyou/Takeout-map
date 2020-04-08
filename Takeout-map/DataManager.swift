@@ -35,6 +35,8 @@ class DataManager: NSObject {
                         spot.text = spotInfo[Common.KeyText] as? String
                         spot.tel = spotInfo[Common.KeyTel] as? String
                         spot.address = spotInfo[Common.KeyAddress] as? String
+                        spot.urlStr = spotInfo[Common.KeyUrl] as? String
+                        spot.imageUrl = spotInfo[Common.KeyImageUrl] as? String
                         let lat:CLLocationDegrees? = spotInfo[Common.KeyLatitude] as? CLLocationDegrees
                         let lng:CLLocationDegrees? = spotInfo[Common.KeyLongitude] as? CLLocationDegrees
                         if lat != nil && lng != nil {
@@ -78,7 +80,7 @@ class Spot : NSObject {
     var open:[String]?
     var category:String?
     var text:String?
-    var urlArray:[String]?
+    var urlStr:String?
     var itemArray:[Item]?
     var coordinate:CLLocationCoordinate2D?
 }

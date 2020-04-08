@@ -37,6 +37,8 @@ class Common: NSObject {
     static let KeyTel = "問い合わせ先 (TEL)"
     static let KeyOpenDay = "実施曜日"
     static let KeyText = "メニュー (説明文 or URL) や備考など自由記入"
+    static let KeyUrl = "よく情報発信しているSNSのURL"
+    static let KeyImageUrl = "写真URL"
     // 所在地をジオコーディングして緯度経度を取得していますが、緯度経度のデータがある場合はこちらが優先されます
     static let KeyLatitude = "緯度" // option
     static let KeyLongitude = "経度" // option

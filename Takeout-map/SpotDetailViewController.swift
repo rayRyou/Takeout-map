@@ -30,7 +30,18 @@ class SpotDetailViewController: UIViewController {
         super.viewDidLoad()
         self.view = scrollView
         self.view.backgroundColor = .systemBackground
-        if spot.imageUrl != nil {
+        if spot.imageUrl != nil && spot.imageUrl?.count ?? 0 > 0{
+            do {
+                if let url = URL(string: spot.imageUrl!) {
+                    self.imageView.contentMode = .scaleAspectFill
+                    self.imageView.layer.masksToBounds = true
+                    let data = try Data(contentsOf: url)
+                    self.imageView.image = UIImage(data: data)
+                }
+            } catch let err {
+                print("Error : \(err.localizedDescription)")
+            }
+            
             self.view.addSubview(imageView)
         }
         addressLabel.dataDetectorTypes = .address
@@ -52,25 +63,20 @@ class SpotDetailViewController: UIViewController {
         
         addressLabel.isEditable = false
         telLabel.isEditable = false
+        urlLabel.isEditable = false
         textLabel.isEditable = false
         
+        textLabel.isScrollEnabled = false
+
         
-        if self.spot.urlArray != nil {
-            var urls = ""
-            for urlStr in self.spot.urlArray! {
-                if urls.count > 0 {
-                    urls += "\n"
-                }
-                urls += urlStr
-            }
-            urlLabel.text = urls
+        if self.spot.urlStr != nil {
+            urlLabel.text = self.spot.urlStr
+            self.view.addSubview(urlLabel)
         }
-        
 
         self.view.addSubview(titleLabel)
         self.view.addSubview(addressLabel)
         self.view.addSubview(telLabel)
-        self.view.addSubview(urlLabel)
         self.view.addSubview(textLabel)
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -82,7 +88,7 @@ class SpotDetailViewController: UIViewController {
         let width:CGFloat = self.view.frame.width
         let height:CGFloat = 40.0
         var posY:CGFloat = 0.0
-        if spot.imageUrl != nil {
+        if spot.imageUrl != nil && spot.imageUrl?.count ?? 0 > 0{
             imageView.frame = CGRect(x: 0.0, y: 0.0, width: width, height: width/4*3)
             posY += imageView.frame.height + margin
         }else{
@@ -100,7 +106,7 @@ class SpotDetailViewController: UIViewController {
         telLabel.sizeToFit()
         posY += telLabel.frame.height + margin
 
-        if spot.urlArray?.count ?? 0 > 0{
+        if spot.urlStr?.count ?? 0 > 0{
             urlLabel.frame = CGRect(x: margin, y: posY, width: width - margin*2, height: height)
             urlLabel.sizeToFit()
             posY += urlLabel.frame.height + margin
