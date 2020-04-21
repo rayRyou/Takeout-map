@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B8DBF5244F1F8D00EBE18F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DBF4244F1F8D00EBE18F /* SceneDelegate.swift */; };
+		13B8DBF7244F1FB900EBE18F /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DBF6244F1FB900EBE18F /* SpotListViewController.swift */; };
 		611F59C9243B02B2009C4EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59C8243B02B2009C4EB7 /* AppDelegate.swift */; };
 		611F59CD243B02B2009C4EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59CC243B02B2009C4EB7 /* ViewController.swift */; };
 		611F59D0243B02B2009C4EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611F59CE243B02B2009C4EB7 /* Main.storyboard */; };
@@ -17,16 +19,16 @@
 		611F59E2243B02C7009C4EB7 /* icon_map@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 611F59DF243B02C7009C4EB7 /* icon_map@3x.png */; };
 		611F59E4243B0456009C4EB7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59E3243B0456009C4EB7 /* Common.swift */; };
 		611F59EA243B046E009C4EB7 /* SpotAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59E5243B046D009C4EB7 /* SpotAnnotation.swift */; };
-		611F59EB243B046E009C4EB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59E6243B046D009C4EB7 /* SceneDelegate.swift */; };
 		611F59EC243B046E009C4EB7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59E7243B046D009C4EB7 /* MapViewController.swift */; };
 		611F59ED243B046E009C4EB7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59E8243B046D009C4EB7 /* DataManager.swift */; };
-		611F59EE243B046E009C4EB7 /* SpotListTableaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59E9243B046D009C4EB7 /* SpotListTableaViewController.swift */; };
 		611F59F0243B06DD009C4EB7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59EF243B06DD009C4EB7 /* BaseViewController.swift */; };
 		611F59F2243B4C9B009C4EB7 /* icon_takeout@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 611F59F1243B4C9B009C4EB7 /* icon_takeout@3x.png */; };
 		611F59F4243B5BD2009C4EB7 /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59F3243B5BD2009C4EB7 /* SpotDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13B8DBF4244F1F8D00EBE18F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		13B8DBF6244F1FB900EBE18F /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		611F59C5243B02B2009C4EB7 /* Takeout-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Takeout-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		611F59C8243B02B2009C4EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		611F59CC243B02B2009C4EB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,10 +41,8 @@
 		611F59DF243B02C7009C4EB7 /* icon_map@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_map@3x.png"; sourceTree = "<group>"; };
 		611F59E3243B0456009C4EB7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		611F59E5243B046D009C4EB7 /* SpotAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotAnnotation.swift; sourceTree = "<group>"; };
-		611F59E6243B046D009C4EB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../takeout-map2/takeout-map/SceneDelegate.swift"; sourceTree = "<group>"; };
 		611F59E7243B046D009C4EB7 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		611F59E8243B046D009C4EB7 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		611F59E9243B046D009C4EB7 /* SpotListTableaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotListTableaViewController.swift; sourceTree = "<group>"; };
 		611F59EF243B06DD009C4EB7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		611F59F1243B4C9B009C4EB7 /* icon_takeout@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_takeout@3x.png"; sourceTree = "<group>"; };
 		611F59F3243B5BD2009C4EB7 /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 				611F59E3243B0456009C4EB7 /* Common.swift */,
 				611F59E8243B046D009C4EB7 /* DataManager.swift */,
 				611F59E7243B046D009C4EB7 /* MapViewController.swift */,
-				611F59E6243B046D009C4EB7 /* SceneDelegate.swift */,
-				611F59E9243B046D009C4EB7 /* SpotListTableaViewController.swift */,
+				13B8DBF4244F1F8D00EBE18F /* SceneDelegate.swift */,
+				13B8DBF6244F1FB900EBE18F /* SpotListViewController.swift */,
 				611F59F3243B5BD2009C4EB7 /* SpotDetailViewController.swift */,
 				611F59E5243B046D009C4EB7 /* SpotAnnotation.swift */,
 				611F59CC243B02B2009C4EB7 /* ViewController.swift */,
@@ -183,15 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				611F59EE243B046E009C4EB7 /* SpotListTableaViewController.swift in Sources */,
 				611F59E4243B0456009C4EB7 /* Common.swift in Sources */,
 				611F59ED243B046E009C4EB7 /* DataManager.swift in Sources */,
+				13B8DBF7244F1FB900EBE18F /* SpotListViewController.swift in Sources */,
 				611F59CD243B02B2009C4EB7 /* ViewController.swift in Sources */,
 				611F59C9243B02B2009C4EB7 /* AppDelegate.swift in Sources */,
 				611F59F4243B5BD2009C4EB7 /* SpotDetailViewController.swift in Sources */,
 				611F59F0243B06DD009C4EB7 /* BaseViewController.swift in Sources */,
+				13B8DBF5244F1F8D00EBE18F /* SceneDelegate.swift in Sources */,
 				611F59EA243B046E009C4EB7 /* SpotAnnotation.swift in Sources */,
-				611F59EB243B046E009C4EB7 /* SceneDelegate.swift in Sources */,
 				611F59EC243B046E009C4EB7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
