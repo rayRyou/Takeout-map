@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13B8DBF5244F1F8D00EBE18F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DBF4244F1F8D00EBE18F /* SceneDelegate.swift */; };
-		13B8DBF7244F1FB900EBE18F /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B8DBF6244F1FB900EBE18F /* SpotListViewController.swift */; };
+		611A3456243EFAF5006CB0F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611A3455243EFAF5006CB0F5 /* SceneDelegate.swift */; };
 		611F59C9243B02B2009C4EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59C8243B02B2009C4EB7 /* AppDelegate.swift */; };
-		611F59CD243B02B2009C4EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F59CC243B02B2009C4EB7 /* ViewController.swift */; };
 		611F59D0243B02B2009C4EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611F59CE243B02B2009C4EB7 /* Main.storyboard */; };
 		611F59D2243B02B4009C4EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611F59D1243B02B4009C4EB7 /* Assets.xcassets */; };
 		611F59D5243B02B4009C4EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611F59D3243B02B4009C4EB7 /* LaunchScreen.storyboard */; };
@@ -27,11 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13B8DBF4244F1F8D00EBE18F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13B8DBF6244F1FB900EBE18F /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
-		611F59C5243B02B2009C4EB7 /* Takeout-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Takeout-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+
+		611A3455243EFAF5006CB0F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		611F59C5243B02B2009C4EB7 /* テイクアウト柏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "テイクアウト柏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		611F59C8243B02B2009C4EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		611F59CC243B02B2009C4EB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		611F59CF243B02B2009C4EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		611F59D1243B02B4009C4EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		611F59D4243B02B4009C4EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +67,7 @@
 		611F59C6243B02B2009C4EB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				611F59C5243B02B2009C4EB7 /* Takeout-map.app */,
+				611F59C5243B02B2009C4EB7 /* テイクアウト柏.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,11 +80,11 @@
 				611F59E3243B0456009C4EB7 /* Common.swift */,
 				611F59E8243B046D009C4EB7 /* DataManager.swift */,
 				611F59E7243B046D009C4EB7 /* MapViewController.swift */,
-				13B8DBF4244F1F8D00EBE18F /* SceneDelegate.swift */,
-				13B8DBF6244F1FB900EBE18F /* SpotListViewController.swift */,
+
+				611A3455243EFAF5006CB0F5 /* SceneDelegate.swift */,
+				611F59E9243B046D009C4EB7 /* SpotListTableaViewController.swift */,
 				611F59F3243B5BD2009C4EB7 /* SpotDetailViewController.swift */,
 				611F59E5243B046D009C4EB7 /* SpotAnnotation.swift */,
-				611F59CC243B02B2009C4EB7 /* ViewController.swift */,
 				611F59DC243B02C7009C4EB7 /* img */,
 				611F59CE243B02B2009C4EB7 /* Main.storyboard */,
 				611F59D3243B02B4009C4EB7 /* LaunchScreen.storyboard */,
@@ -125,7 +122,7 @@
 			);
 			name = "Takeout-map";
 			productName = "Takeout-map";
-			productReference = 611F59C5243B02B2009C4EB7 /* Takeout-map.app */;
+			productReference = 611F59C5243B02B2009C4EB7 /* テイクアウト柏.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,12 +182,10 @@
 			files = (
 				611F59E4243B0456009C4EB7 /* Common.swift in Sources */,
 				611F59ED243B046E009C4EB7 /* DataManager.swift in Sources */,
-				13B8DBF7244F1FB900EBE18F /* SpotListViewController.swift in Sources */,
-				611F59CD243B02B2009C4EB7 /* ViewController.swift in Sources */,
 				611F59C9243B02B2009C4EB7 /* AppDelegate.swift in Sources */,
 				611F59F4243B5BD2009C4EB7 /* SpotDetailViewController.swift in Sources */,
 				611F59F0243B06DD009C4EB7 /* BaseViewController.swift in Sources */,
-				13B8DBF5244F1F8D00EBE18F /* SceneDelegate.swift in Sources */,
+				611A3456243EFAF5006CB0F5 /* SceneDelegate.swift in Sources */,
 				611F59EA243B046E009C4EB7 /* SpotAnnotation.swift in Sources */,
 				611F59EC243B046E009C4EB7 /* MapViewController.swift in Sources */,
 			);
@@ -268,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -343,8 +338,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.oakleafproject.Takeout-map";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oakleafproject.Takeout-map-kashiwa";
+				PRODUCT_NAME = "テイクアウト柏";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -361,8 +356,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.oakleafproject.Takeout-map";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oakleafproject.Takeout-map-kashiwa";
+				PRODUCT_NAME = "テイクアウト柏";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
