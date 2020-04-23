@@ -24,7 +24,7 @@ class BaseViewController: UITabBarController {
         let menuBtn = UITabBarItem(title: "Map", image: UIImage(named: Common.MapIcon)?.resizeImage(CGSize(width: tabIconSize, height: tabIconSize)), tag: 0)
         mapVC.tabBarItem = menuBtn
         
-        let listVC = SpotListTableaViewController()
+        let listVC = SpotListViewController()
         let litBtn = UITabBarItem(title: "List", image: UIImage(named: Common.ListIcon)?.resizeImage(CGSize(width: tabIconSize, height: tabIconSize)), tag: 1)
         listVC.tabBarItem = litBtn
 
