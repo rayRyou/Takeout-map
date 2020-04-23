@@ -29,7 +29,7 @@ class Common: NSObject {
     
     static let DefaultMapCenter = CLLocationCoordinate2DMake(35.861560, 139.972151)
     static let DefaultMapSpan = 0.005
-    static let MapPinSize:CGFloat = 50.0
+    static let MapPinSize:CGFloat = 80.0
 
     // Key String
     static let KeySpotName = "店名"
